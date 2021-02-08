@@ -2,15 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-p {
-  margin-bottom: 10px;
-}
-
-ul {
-  margin-bottom: 15px;
-}
-
-li {
-  list-style-type: disc;
-  margin-left: 35px;
+@layer base {
+  p {
+    @apply mb-5;
+  }
+  ul,
+  ol {
+    @apply mb-5;
+  }
+  li {
+    @apply list-disc ml-8;
+  }
+  a {
+    @apply text-purple-300 underline;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  strong {
+    @apply text-green-500;
+  }
 }

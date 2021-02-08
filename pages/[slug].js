@@ -26,7 +26,7 @@ export async function getStaticProps({ params }) {
 export default function Post({ postData }) {
   return (
     <Layout>
-      <div className="w-full">
+      <div className="w-full text-lg">
         <Title title={postData.title} className="mb-3" />
         <Date dateString={postData.created_at} />
         <div dangerouslySetInnerHTML={{ __html: postData.content }} />

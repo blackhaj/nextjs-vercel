@@ -8,11 +8,11 @@ export default function PostCard({ post }) {
       <Link href={`${post.slug}`}>
         <div>
           <h2 className="text-lg text-blue-500">{post.title}</h2>
-          <p className="text-base text-justify">
+          <div className="text-base text-justify">
             {snippet}
             {snippet.length === 200 ? '...' : ''}
-          </p>
-          <p className="text-base text-gray-500">{format(post.created_at)}</p>
+          </div>
+          <div className="text-base text-gray-500">{format(post.created_at)}</div>
         </div>
       </Link>
     </div>
