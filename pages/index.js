@@ -19,7 +19,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData = [] }) {
   const PostList = allPostsData.map((post) => <PostCard key={post.id} post={post} />);
 
   return (
